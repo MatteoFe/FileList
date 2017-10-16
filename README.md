@@ -1,5 +1,5 @@
 # FileList
-This is a simple Xamarin.Android control wich allow you to view and navigate directory.
+This is a simple Xamarin.Android control that allow to view and navigate directories.  
 
 You can or not show hiddden files with the <i>ShowHiddenFiles</i> property.  
 You can or not show a textview with current directory with the <i>ShowCurrentDir</i> property.  
