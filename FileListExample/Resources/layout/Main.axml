@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainLayout"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <CheckBox
+        android:id="@+id/checkBoxShowDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show directory"
+        android:checked="true"
+        android:textSize="20dp" />
+    <FileList.FileListView
+        android:id="@+id/fileListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

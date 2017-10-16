@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/file_picker_image"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/file"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/file_picker_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dip"
+            android:singleLine="true"
+            android:text="filename" />
+    </LinearLayout>
+    <GridLayout
+        android:id="@+id/infoGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchMode="columnWidth"
+        android:rowCount="1"
+        android:columnCount="4">
+        <TextView
+            android:layout_weight="1"
+            android:text=""
+            android:layout_width="40dp" />
+        <TextView
+            android:id="@+id/file_picker_info_size"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:text="info"
+            android:textStyle="italic"
+            android:layout_gravity="fill_horizontal" />
+        <TextView
+            android:id="@+id/file_picker_info_attribute"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="attribute"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:gravity="right"
+            android:layout_marginRight="5dp" />
+        <TextView
+            android:id="@+id/file_picker_info_datetime"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:text="datetime"
+            android:textStyle="italic"
+            android:gravity="end"
+            android:layout_marginRight="5dp"
+            android:layout_width="160dp" />
+    </GridLayout>
+</LinearLayout>
